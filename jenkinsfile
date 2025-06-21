@@ -1,0 +1,16 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                sh 'echo "Helo from Rhti"'
+            }
+        }
+        stage('Hello 2'){
+            steps{
+                sh 'echo "Hello from probable ws2"'
+            }
+        }
+    }
+}
