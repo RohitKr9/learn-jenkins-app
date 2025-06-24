@@ -24,7 +24,10 @@ pipeline {
             steps{
                 sh'''
                     echo 'test Stage'
+                    ls
                     cd build
+                    echo 'AFTER CD'
+                    ls
                     test index.html
                 '''
             }
